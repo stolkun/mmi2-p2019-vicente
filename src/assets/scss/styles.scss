@@ -1,8 +1,14 @@
-.header {
-  background: gold;
+@import "vendors/reset.scss";
 
-  h1 {
-    text-align: center;
-    font-size: 50px;
-  }
-}
+@import "config/medias.scss";
+@import "config/colors.scss";
+@import "config/fonts.scss";
+@import "config/mixins.scss";
+
+@import "globals/layout.scss";
+@import "globals/interface.scss";
+@import "globals/typography.scss";
+
+@import "blocs/scrollbar.scss";
+@import "blocs/header.scss";
+@import "blocs/title.scss";
