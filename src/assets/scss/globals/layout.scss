@@ -8,4 +8,14 @@ html{
 
 body{
     background: black;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
 }

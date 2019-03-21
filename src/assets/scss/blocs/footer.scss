@@ -1,0 +1,23 @@
+.footer{
+    font-family: "Roboto";
+}
+
+.footer__rights{
+    padding: 25px;
+    color: #555;
+    font-size: 0.6rem;
+
+    @include flex(row, wrap, center, center);
+
+    @include md{
+        font-size: 1.2rem;
+    }
+
+    @include l{
+        font-size: 1.7rem;
+    }
+
+    @include xl{
+        font-size: 3rem;
+    }
+}

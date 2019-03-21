@@ -1,3 +1,28 @@
+.header__title{
+    font-size: 2rem;
+    position: absolute;
+    top: 2vh;
+    z-index: 1;
+    
+    @include center-x;
+
+    @include md{
+
+        font-size: 5rem;
+        max-width: 80vw;
+    }
+
+    @include l{
+        font-size: 6rem;
+        max-width: 60vw;
+    }
+
+    @include xl{
+        font-size: 10rem;
+        max-width: 60vw;
+    }
+}
+
 .header__video{
     width: 100%;
     height: auto; 
