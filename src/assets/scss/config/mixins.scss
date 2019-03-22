@@ -10,3 +10,17 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+@mixin shadow {
+    &::after{
+        content: "";
+        position: absolute;
+        -webkit-box-shadow: inset 0px 0px 20px 20px rgba(0,0,0,1);
+        -moz-box-shadow: inset 0px 0px 20px 20px rgba(0,0,0,1);
+        box-shadow: inset 0px 0px 20px 20px rgba(0,0,0,1);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }   
+}

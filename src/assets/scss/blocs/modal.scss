@@ -1,12 +1,25 @@
 .modal{
     position: fixed;
-    display: flex;
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
     top: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 999;
+    transition: all 1s ease;
+    color: var(--primaryText);
+    font-size: 0.9rem;
+    @include md{
+        font-size: 1.5rem;
+    }
+
+    @include l{
+        font-size: 2rem;
+    }
+
+    @include xl{
+        font-size: 4rem;
+    }
+
+    @include flex(column, wrap, center, center);
 
     &::before{
         content: "";
@@ -21,9 +34,67 @@
 }
 
 .modal__body{
+    position: relative;
     height: 90%;
     width: 90vmin;
     border-radius: 20px;
     background-color: black;
-    overflow-y: auto;
+    padding: 30px;
+    cursor: url("../files/cursor.cur"),auto;
+
+    @include l{
+        width: 80vw;
+    }
+
+    > div{
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+        @include flex(column, nowrap, flex-start, center);
+
+        @include md{
+            align-items: flex-start;
+        }
+    }
+}
+
+.modal__thumbnail-container{
+    position: relative;
+    width: 90%;
+    
+    @include shadow;
+
+    @include md{
+        width: 60%;
+    }
+    
+    @include l{
+        width: 40%;
+    }
+}
+
+.modal__thumbnail{
+    width: 100%;
+    height: auto;
+}
+
+.modal__close{
+    position: absolute;
+    color: white;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.modal__quote{
+    font-family: "cz";
+    color: red;
+}
+
+.hidden{
+    opacity: 0;
+    z-index: -1;
 }

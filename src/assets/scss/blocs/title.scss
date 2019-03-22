@@ -1,11 +1,12 @@
 .title{
     white-space: nowrap;
-    color: $gold;
+    color: var(--gold);
     padding: 8px 20px;
     background: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0));
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(to left,rgba(17,17,17,0) 1%,rgba(150,150,150,.7) 50%,rgba(17,17,17,0) 100%) 80% 0 80% 0/3px 0 3px 0 stretch;
     font-family: "dd";
+    
     @include flex(column, wrap, center, center);
 }

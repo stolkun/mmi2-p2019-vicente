@@ -4,8 +4,9 @@
 
 .footer__rights{
     padding: 25px;
-    color: #555;
+    color: #aaa;
     font-size: 0.6rem;
+    white-space: nowrap;
 
     @include flex(row, wrap, center, center);
 
