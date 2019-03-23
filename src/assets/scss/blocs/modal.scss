@@ -94,6 +94,81 @@
     color: red;
 }
 
+.modal__skills{
+    margin-top: 2rem;
+    width: 100%;
+
+    h3{
+        color: var(--gold);
+        font-family: "dd";
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: rgb(53, 30, 30);
+        line-height: 2.7rem;
+
+        @include md{
+            font-size: 4.5rem;
+            line-height: 6rem;
+        }
+    
+        @include l{
+            font-size: 5.2rem;
+            line-height: 7rem;
+        }
+    
+        @include xl{
+            font-size: 8rem;
+            line-height: 12rem;
+        }
+    }
+}
+
+.modal__table{
+    font-family: "Roboto";
+    color: #777;
+
+    tr:not(:last-of-type) td, th{
+        border-bottom: 1px solid #555;
+    }
+
+    td:not(:last-of-type), th:not(:last-of-type){
+        border-right: 1px solid #555;
+    }
+
+    th, td{
+        padding: 1rem;
+    }
+
+    td:not(:first-of-type){
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &:nth-of-type(1) td:first-of-type,&:nth-of-type(2) td:first-of-type{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    div{
+        display: inline;
+        padding: 10px;
+        clip-path: circle(20%);
+        background-color: #777;
+        
+        &.red{
+            background-color: red;
+        }
+
+        &.green{
+            background-color: var(--gold);
+        }
+    }
+
+    @include md{
+        width: 100%;
+    }
+}
+
 .hidden{
     opacity: 0;
     z-index: -1;
