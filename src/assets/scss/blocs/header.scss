@@ -47,6 +47,48 @@
     }
 }
 
+.header__introduction{
+    text-align: center;
+    
+    @include flex;
+
+    p{
+        margin: 10px;
+        font-family: "Roboto";
+        color: #888;
+
+        @include md{
+            font-size: 1.5rem;
+        }
+
+        @include l{
+            font-size: 2rem;
+        }
+
+        @include xl{
+            font-size: 4rem;
+        }
+    }
+}
+
+.header__subtitle{
+    color: red;
+    font-family: "cz";
+    font-size: 1.2rem;
+
+    @include md{
+        font-size: 2rem;
+    }
+
+    @include l{
+        font-size: 2.8rem;
+    }
+
+    @include xl{
+        font-size: 5rem;
+    }
+}
+
 .header__sells{
     padding: 15px;
     
