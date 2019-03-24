@@ -46,3 +46,35 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0f9ff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
     }
 }
+
+.header__sells{
+    padding: 15px;
+    
+    @include flex(row, wrap, center, flex-end);
+}
+
+.header__sell-icon{
+    margin: 10px;
+    width: 40vw;
+    font-family: "Roboto";
+    font-size: 2rem;
+
+    @include flex(column, nowrap, flex-end, center);
+
+    @include md{
+        width: 20vw;
+    }
+    
+    @include l{
+        width: 10vw;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    &:hover{
+        filter: brightness(0.5) sepia(1) saturate(10000%);
+    }
+}
