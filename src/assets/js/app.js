@@ -1,7 +1,6 @@
 import "waypoints/lib/noframework.waypoints.min.js";
-import { stat } from "fs";
 
-
+// MODAL
 const   icone = document.querySelectorAll(".section__heroe-icone"),
         modal = document.getElementById("modal"),
         modalClose = document.getElementById("modal__close"),
@@ -596,3 +595,16 @@ modalClose.addEventListener("click", (e) => {
         modal.classList.toggle("hidden");
     }
 });
+
+// LOCATION
+const locations = document.getElementsByClassName("section__location");
+
+for(let i = 0; i < locations.length; i++){
+    let waypoint = new Waypoint({
+        element: locations[i],
+        handler: function(direction) {
+            this.element.children[0].children[0].classList.remove("hidden");
+        },
+        offset: '70%'
+      });
+}
